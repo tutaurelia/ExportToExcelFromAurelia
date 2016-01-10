@@ -1,0 +1,26 @@
+<template>
+  <section>
+    </br>
+      <form role="form">
+          <button type="submit" click.delegate="exportContacts()" class="btn btn-primary">Export to Excel</button>
+      </form>
+      </br>
+	<table class="table">
+		    <thead>
+          <th>first name</th>
+          <th>last name</th>
+          <th>email address</th>
+          <th>birth date</th>
+          </thead>
+        <tbody repeat.for="contact of contacts">
+              <tr>
+                <td>${contact.firstName}</td>
+                <td>${contact.lastName}</td>
+                <td>${contact.email}</td>
+                <td>${contact.birthDate}</td>
+              </tr>
+        </tbody>
+	</table>
+  </section>
+</template>
+
